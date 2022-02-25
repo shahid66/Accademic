@@ -1,0 +1,682 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+   font-weight: 700; 
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+.container{
+    width: 1300px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.container-full{
+    width: 100%;
+   
+    
+}
+.container::before,
+.container::after,
+.container-full::before,
+.container-full::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0px 25px;
+}
+.col-33{
+    width: 33.33%;
+    float: left;
+    padding: 0px 25px;
+}
+.col-25{
+    width: 25%;
+    float: left;
+    padding: 0px 25px;
+}
+.col-30{
+    width: 30%;
+    float: left;
+    padding: 0px 25px;
+}
+.col-70{
+    width: 70%;
+    float: left;
+    padding: 0px 25px;
+}
+.col-100{
+    width: 100%;
+    float: left;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+/* =====site css===== */
+
+/* =====top header css===== */
+.top-header{
+    background: #1d1d1d;
+    padding: 10px 0px;
+}.number{
+    
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #d8d8d8;
+    transition: .3s;
+}
+.number:hover,.social a:hover,.login-register a:hover{
+    color: red;
+    
+}
+
+.social{
+    
+    margin: 0;
+    display: inline-block;
+    margin-left:30px ;
+    transition: .3s;
+    
+}
+.social li{
+    list-style: none;
+    display: inline-block;
+    color: #d8d8d8;
+    font-size: 14px;
+}
+.social li a{
+    transition: .3s;
+    color: #d8d8d8;
+
+}
+.social li a i{
+    margin-left: 5px;
+    color: #d8d8d8;
+    
+}
+.login-register a{
+    color: #d8d8d8;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    float: right;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+
+/* =====top header css End===== */
+
+/* ===== header css start===== */
+header{
+    background: #fff;
+    padding: 20px 0px;
+}
+.logo img{
+    width: 200px;
+}
+.main-menu{
+    list-style: none;
+    padding-top: 10px;
+    float:right;
+}
+.main-menu li{
+    display: inline-block;
+    
+}
+.main-menu li a{
+    text-decoration: none;
+    color: #252525;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    margin: 0px 20px;
+    transition: .3s;
+}
+.main-menu li a:hover{
+    border-bottom: 2px solid #ff1949;
+}
+.active{
+    border-bottom: 2px solid #ff1949 !important;
+}
+.menu-icon{
+margin: 0px 10px !important;
+
+}
+.menu-icon:hover{
+    border-bottom: 2px solid transparent !important;
+    color: #ff1949;
+    }
+
+
+/* ===== header css end===== */
+
+/* ===== home css start===== */   
+
+.home{
+    background-image: url("../img/background01.jpg");
+    padding: 200px 0px;
+    color: #fff;
+}
+.home h1{
+    font-size: 92px;
+    font-weight: 700;  
+    position: relative;  
+}
+.home h1::before{
+    content:"";
+    height: 3px;
+    width: 60px;
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+.home p{
+    font-size: 19px;
+    font-weight: 300; 
+    line-height: 30px; 
+    padding: 40px 0px; 
+}
+.btn{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: capitalize;
+    padding: 20px 50px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+    margin-right: 30px;
+}
+.btn i{
+    visibility: hidden;
+    transition: .3s;
+}
+.btn:hover i{
+visibility: visible;
+}
+.btn-active{
+    background: #ff1949;
+    border: 2px solid #ff1949;
+}
+
+
+
+/* ===== Courses css start ===== */
+.courses-menu{
+list-style: none;
+padding-bottom: 40px;
+margin-left: 25px;
+
+
+
+}
+.courses-menu li{
+    display: inline-block;
+    text-transform: capitalize;
+    color: #252525;
+    font-size: 17px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+    transition: padding .2s ease;
+    position: relative;
+    
+}
+.courses-home{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.courses-home img{
+width: 100%;
+height: 100%;
+
+}
+.crs-ctg{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    color: #fff;
+    background: #FD1949;
+    padding: 15px 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .3s;
+
+}
+.crs-ctg:hover{
+    background: #252525;
+    transition: .3s;
+}
+.courses-box:hover img{
+transform: scale(1.1);
+transition: .5s;
+
+}
+.courses-details h3 a{
+    font-size: 20px;
+    color: #252525;
+    transition: .3s;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 20px 0px;
+    display: inline-block;
+}
+.courses-details h3 a:hover{
+    color: #FD1949;
+    transition: .3s;
+}
+.instractor{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #252525;
+    padding-bottom: 15px;
+    display: inline-block;
+    position: relative;
+}
+.courses-details p{
+    font-size: 15px;
+    color: #444;
+    line-height: 24px;
+
+}
+.courses-footer{
+    font-size: 13px;
+    
+    padding-top: 20px;
+}
+.courses-footer a{
+  color: #252525;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.courses-footer i{
+    padding-right: 5px;
+  }
+  .course-rating{
+      margin-left: 20px;
+  }
+  .course-fee{
+      float: right;
+      font-size: 20px;
+      color: #FD1949 !important;
+      font-weight: 500;
+  }
+  .instractor::before{
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      background: red;
+      left: 0;
+      bottom: 0;
+      transition: .3s;
+
+  }
+  .instractor:hover::before{
+    
+    width: 50px;
+   
+
+}
+.courses-menu li:hover::before{
+
+
+    content: "\f061";
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 20px;
+    font-family: "Font Awesome 5 Free"; 
+    
+    color: #ff1949;
+    font-size: 18px;
+    line-height: inherit;
+    font-weight: 800;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}    
+    
+/* ===== Courses css end===== */
+
+/* ===== Expert css start===== */
+.expert .col-50{
+    padding: 0px;
+}
+.expert-box{
+ width: 100%;
+ height: 490px;
+ padding: 100px 200px;
+ color: #fff;
+}
+.expert-box a{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+.expert-box h3{
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+.expert-box-1{
+    background:#FD1949;
+}
+.expert-box-2{
+    background: url("../img/main-home-img-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.expert-box-3{
+    background: url("../img/main-home-img-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.expert-box-4 h3,
+.expert-box-4 a{
+    color:black;
+}
+/* ===== Expert css end===== */
+
+/* ===== Teachers css Start===== */
+.section-title{
+    padding-bottom: 70px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.section-title h3{
+font-size: 45px;
+color: #252525;
+padding-bottom: 40px;
+position: relative;
+}
+.section-title h3::before{
+    content:"";
+    height: 3px;
+    width: 60px;
+    position: absolute;
+    background: #ff1949;
+     
+    bottom: 25px;
+    left: 0px;
+
+}
+.section-title p{
+font-size: 19px;
+color: #333;
+}
+.teachers-single{
+ display: flex;
+ margin-bottom: 30px;   
+}
+.teachers.section-padding{
+    padding-bottom: 90px;
+}
+.teachers-single-left{
+    width: 140px;
+    height: 140px;
+}
+.teachers-single-right{
+color: #252525;
+padding:30px;
+}
+.teachers-single-right h3{
+font-size: 20px;
+text-transform: capitalize;    
+}
+.teachers-single-right span{
+font-size: 15px;
+}
+.teachers-single-right ul{
+    list-style: none;
+}
+.teachers-single-right ul li{
+    display: inline-block;
+}
+.teachers-single-right ul li a{
+    font-size: 14px;
+    margin-right: 4px;
+}
+.teachers-single-right ul li a i{
+    color:black;
+    transition: .3s;
+}
+.teachers-single-right ul li:hover a i{
+    color: #FD1949;
+    transition: .3s;
+}
+/* ===== Teachers css End===== */
+/* ===== Review css Start===== */
+.review{
+    
+    background: #FF1A49;
+    
+}
+.review-single{
+    display: flex;
+    position: relative;
+    background: #FF1A49;
+    z-index: 1;
+}
+.review-author{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+.review-feedback{
+    color: #fff;
+    padding-left: 30px;
+}
+.review-feedback p{
+    font-size: 45px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.review-feedback span{
+    font-size: 19px;
+    padding-top: 5px;
+    display: inline-block;
+}
+.review-single::after{
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    position: absolute;
+    font-size: 300px;
+    right: 0;
+    top: -100px;
+    bottom: 0;
+    z-index: -1;
+    opacity: .1;
+}
+/* ===== Review css End===== */
+/* ===== Tour css start===== */
+.tour-list{
+    list-style: none;
+    line-height: 24px;
+    color: #444444;
+}
+.tour-list i{
+    color: #FD1949;
+}
+/* ===== Tour css End===== */
+/* ===== Form css start===== */
+.form-section{
+    background: url("../img//form-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.form-section i{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    left: 48.8%;
+    bottom: 50%;
+    font-size: 50px;
+    color: #fff;
+}
+.form-section .col-50{
+    padding: 0px;
+}
+.form-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .6; 
+    z-index: -1;
+}
+.form-left{
+    background:#FD1949 ;
+    color: #fff;
+    padding: 170px 60px;
+    margin-left: 100px;
+}
+.form-left h3{
+    font-size: 45px;   
+}
+.form-right{
+    background: #fff;
+    padding: 122px 70px;
+    margin-right: 100px;
+}
+.form-right h4{
+    font-size: 28px;
+    color: #252525;
+    text-transform: capitalize;
+}
+.form-right input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 15px;
+}
+.form-right input[type="submit"]{
+    width: 150px;
+    padding: 20px 0px;
+    font-size:16px;
+    background: #252525;
+    color: #fff;
+    border: none;
+    margin-top: 30px;cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+.form-right input[type="submit"]:hover{
+    background: #FD1949;
+    transition: .3s;
+    font-weight: bold;
+}
+/* ===== Form css End===== */
+/* ===== Footer css start===== */
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background: #252525;
+    color: #fff;
+}
+.footer-single a{
+    color: #fff;
+    font-size: 15px;
+    transition: .3s;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.footer-single a:hover{
+    color: #FD1949;
+    transition: .3s;
+}
+.footer-single p{
+    padding-bottom: 30px;
+}
+.footer-single h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.footer-course h6{
+    padding-bottom: 0px;
+    padding-top: 10px;  
+}
+.footer-course a{
+padding-bottom: 0px;
+padding-top: 0px;
+}
+.footer-copyright a{
+color: #fff;
+}
+.footer-copyright{
+    background: black;
+    margin-top: 100px;
+    padding: 20px 0px;
+
+}
+.footer.section-padding{
+    padding-bottom: 0px;
+}
+.copyright-right{
+    float: right;
+}
+.copyright-right ul{
+    display: inline-block;
+    padding-left: 30px;
+}
+.copyright-right ul li{
+    display: inline-block;
+    padding: 5px;
+    transition: .3s;
+}
+.copyright-right ul li:hover i{
+    color: #FD1949;
+    transition: .3s;
+}
+/* ===== Footer css End===== */
+
